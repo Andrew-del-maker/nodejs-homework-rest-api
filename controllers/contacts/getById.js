@@ -5,7 +5,7 @@ const getById = async (req, res) => {
   const { contactId } = req.params
   const { _id } = req.user
   const result = await Contact.findById(contactId).find({ owner: _id })
-  if (!result || []) {
+  if (!result) {
     throw new NotFound(`You have no contacts with id=${contactId}`)
   }
   res.json({

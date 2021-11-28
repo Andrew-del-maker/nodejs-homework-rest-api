@@ -27,6 +27,10 @@ const contactSchema = Schema({
   owner: {
     type: SchemaTypes.ObjectId,
     ref: 'user',
+  },
+  avatar: {
+    type: String,
+    required: true
   }
 }, { versionKey: false, timetamps: true })
 

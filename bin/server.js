@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const app = require('../app')
 
-const { PORT = 8000, DB_HOST } = process.env
+const { PORT = 8001, DB_HOST } = process.env
 mongoose.connect(DB_HOST)
   .then(() => app.listen(PORT))
   .catch(error => {
