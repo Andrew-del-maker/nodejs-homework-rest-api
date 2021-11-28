@@ -1,5 +1,5 @@
 const { getAll, getById, addContact, updateById, removeById, updateFavor, updateAvatar } = require('./contacts')
-const { auth, login, singout, updateUserAvatar } = require('./auth')
+const { auth, login, singout, updateUserAvatar, verify, verifyAgain } = require('./auth')
 module.exports = {
   getAll,
   getById,
@@ -11,5 +11,7 @@ module.exports = {
   login,
   singout,
   updateAvatar,
-  updateUserAvatar
+  updateUserAvatar,
+  verify,
+  verifyAgain
 }
