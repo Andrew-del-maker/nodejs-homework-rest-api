@@ -4,6 +4,7 @@ const addContact = require('./addContact')
 const updateById = require('./updateById')
 const removeById = require('./removeById')
 const updateFavor = require('./updateFavor')
+const updateAvatar = require('./updateAvatar')
 
 module.exports = {
   getAll,
@@ -11,5 +12,6 @@ module.exports = {
   getById,
   updateById,
   removeById,
-  updateFavor
+  updateFavor,
+  updateAvatar
 }
